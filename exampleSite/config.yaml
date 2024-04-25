@@ -224,7 +224,7 @@ params:
         image: /images/elementary.png
       - title: Portfolio Website Devlopemnt
         content: Developed a portfolio website.
-        url: https://github.com/hannahsiren/my-site
+        url: https://github.com/hannahsiren/hugo-profile
         image: /images/portfolio.png
 
   # Projects
