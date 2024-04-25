@@ -1,7 +1,7 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "http://example.org/"
 languageCode: "en-us"
-title: "Hugo Profile"
-theme: hugo-profile
+title: "Hannah Siren"
+theme: "hugo-profile"
 
 outputs:
   home:
@@ -22,18 +22,7 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -53,10 +42,10 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
+  title: "Hannah Siren"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/images/HS.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -85,13 +74,13 @@ params:
     textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+     textColor: "#2d150a"
+     secondaryTextColor: "#51321b"
+     backgroundColor: "#eeeae6"
+     secondaryBackgroundColor: "#fff4f1"
+     primaryColor: "#6b705c"
+     secondaryColor: "#ffffff"
 
   #   darkmode:
   #     textColor:
@@ -106,7 +95,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Hannah Siren" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -124,28 +113,23 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    title: "Hannah Siren."
+    subtitle: "UX Designer"
+    content: "Welcome to my professional portfolio"
+    image: /images/hannah.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/resumeHannahSiren.pdf"
       download: true
-      newPage: false
+      newPage: false cdf
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/hannahsiren/
 
   # About
   about:
@@ -153,207 +137,130 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      In the spring of 2024, I will receive a BS in Information, Communication, and Technology with a minor in Innovation. I aim to leverage the skills gained from my experience in UX design, web development, sales, and project management and apply them to future experience in the technology industry. 
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "HTML"
-        - "CSS"
+        - "Figma"
         - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "UI/UX Design"
+        - "Google Suite"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
+      - job: "IT and User Experience Intern"
+        company: "UTSW"
+        companyUrl: "https://www.utsouthwestern.edu/"
+        date: "May 2023 - August 2023"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+         - Learned to work with data efficiently, leveraging Excel's capabilities for insightful analysis. 
+         - Ensured that course templates were user-friendly, visually appealing, and aligned with educational best practices.
+         - Utilized Power Automate to automate repetitive tasks, improving workflow efficiency and productivity.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+      - job: "Assistant Manager"
+        company: "Cherry Smash"
+        date: "Jan 2019 - Aug 2021"
+        content: |
+         - Serve and attend to approximately 300 customers per shift while providing a memorable experience.
+         - Train and develop other team members while supporting general manager with operational tasks.
+         - Maintained inventory and scheduled orders accordingly.
+         - Organized the schedule for 10+ employees
 
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
+      - job: "Small Business Owner"
+        company: "Etsy"
         date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+         - Founded and operated an online sales business specializing in handmade custom designs, overseeing all aspects of entrepreneurship including product design, marketing, and customer service.
+         - Strategically marketed the product on social media platforms, effectivelly reaching a diverse customer base.
+         - Managed the end-to-end process of creating, packaging, and shipping over 900 orders
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
+      - job: "Sales Associate"
+        company: "Club Pilates"
         companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+        date: "March 2024 - Present"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
+          - Demonstrated strong sales skills, successfully promoting membership packages and retail products to meet and exceed sales targets.
+          - Contributed to marketing efforts, including social media promotion and community outreach events, to drive membership growth and brand awareness.
+          - Efficiently managed front desk operations, providing exceptional customer service to members and guests
+          
   # Education
   education:
     enable: true
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
-        school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+      - title: "Information Technology and Communications Major"
+        school: 
+          name: "Florida State University"
+          url: "https://www.fsu.edu/"
+        date: "Expected graduation: May 2024"
+        GPA: "3.624"
         content: |-
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+            - Participated in fundraising events such as Dance Marathon and St. Jude's initiatives
+            - Held leadership roles within Tri Delta, fostering teamwork and organizational skills
 
   # Achievements
   achievements:
     enable: true
-    # title: "Custom Name"
+    title: "Projects"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievment.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievment.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: Mobile Applications Development
+        content: Find my previous projects from my Advanced Mobile Applications Development course here!
+        url: https://bitbucket.org/hes21i/lis4331/src/master/
+        image: /images/s11_ProductDemo.png
+      - title: Project Management of Application
+        content: Collaborated in a team-based Information Technology project class to design, plan, and execute a comprehensive development project.
+        url: https://docs.google.com/presentation/d/1L4Qb9kR_WhQ34VtVRIWYESlqF_ZGvPC9CBTszyJBcfI/edit?usp=sharing
+        image: /images/app2.png
+      - title: Redesign of Website for UX Experience
+        content: Redesigned an elementery school website for an Information Architecture course at FSU.
+        url: "https://docs.google.com/presentation/d/1YeJ9bx22wcL-kb14RgwRPeNaX2rJH54QAEikBUQWRY0/edit?usp=sharing"
+        image: /images/elementary.png
+      - title: Portfolio Website Devlopemnt
+        content: Developed a portfolio website.
+        url: https://github.com/hannahsiren/my-site
+        image: /images/portfolio.png
 
-  # projects
+  # Projects
   projects:
     enable: true
-    # title: "Custom Name"
+    title: "Services"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+      - title: Web Design
+        content: Web Design experience learned from Web Application Course at Florida State University.
+        image: /images/codeas.png
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          - "Java"
+          - "Android Studio"
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: UI/UX
+        content: UI/UX experience learned from User Experience Design Course and User Experience Internship at UTSW
+        image: /images/application.png
         badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          - "Figma"
+          - "Balsamiq"
+          - "Adobe XD"
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+      - title: Social Media Management
+        content: Social Media Management learned from personal experience in collaborating with brands and internship at UTSW.
+        image: /images/social.png
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - "Canva"
+          - "SeedSprout"
 
   #Contact
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    content: Feel free to reach out if you have any projects or opportunities you'd like to discuss.
+    btnName: Email me
+    btnLink: mailto:hannahsiren03@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -368,11 +275,7 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      linkedin: https://www.linkedin.com/in/hannahsiren/
 
   # List pages like blogs and posts
   listPages:
@@ -387,17 +290,6 @@ params:
       enable: true
 
   # For translations
-  terms:
-    read: "Read"
-    toc: "Table Of Contents"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
-
-  datesFormat:
-    article: "Jan 2, 2006"
-    articleList: "Jan 2, 2006"
-    articleRecent: "Jan 2, 2006"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
