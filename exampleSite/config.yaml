@@ -123,7 +123,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/resumeHannahSiren.pdf"
+      url: https://www.linkedin.com/in/hannahsiren/overlay/1706200130958/single-media-viewer/?profileId=ACoAAEaSLUsBLqzuqPMVKFgP7xgN8L3nysNk64o
       download: true
       newPage: false cdf
     socialLinks:
